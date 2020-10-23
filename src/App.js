@@ -22,11 +22,11 @@ import Trending from "./pages/Trending";
 import Submit from "./pages/Submit";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
-// import EditProfile from "./pages/EditProfile";
+import EditProfile from "./pages/EditProfile";
 // import Product from "./pages/Product";
-// import Login from "./pages/Login";
-// import Signup from "./pages/Signup";
-// import Forgot from "./pages/Forgot";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Forgot from "./pages/Forgot";
 // import useAuth from "./hooks/useAuth";
 // import UserContext from "./contexts/UserContext";
 
@@ -67,11 +67,11 @@ const App = () => {
             <Route path="/submit" component={Submit} />
             <Route path="/search" component={Search} />
             <Route path="/profile" component={Profile} />
-            {/* <Route path="/edit-profile" component={EditProfile} />
-              <Route path="/register" component={Signup} />
-              <Route path="/login" component={Login} />
-              <Route path="/forgot" component={Forgot} />
-              <Route path="/product/:productId" component={Product} /> */}
+            <Route path="/edit-profile" component={EditProfile} />
+            <Route path="/register" component={Signup} />
+            <Route path="/login" component={Login} />
+            <Route path="/forgot" component={Forgot} />
+            {/* <Route path="/product/:productId" component={Product} /> */}
             <Route component={() => <Redirect to="/home" />} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
