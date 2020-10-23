@@ -15,7 +15,7 @@ import firebase from "../firebase";
 import UserContext from "../contexts/UserContext";
 import SmallHeader from "../components/Header/SmallHeader";
 import LargeHeader from "../components/Header/LargeHeader";
-// import Upload from "../components/Form/Upload";
+import Upload from "../components/Form/Upload";
 import { toast } from "../utils/toast";
 
 const INITIAL_STATE = {
@@ -147,7 +147,7 @@ const Submit = ({ history }) => {
                         required
                     ></IonInput>
                 </IonItem>
-                {/* <IonRow>
+                <IonRow>
                     <IonCol>
                         <Upload
                             files={thumb}
@@ -165,7 +165,7 @@ const Submit = ({ history }) => {
                             multiple
                         />
                     </IonCol>
-                </IonRow> */}
+                </IonRow>
                 <IonRow>
                     <IonCol>
                         <IonButton
